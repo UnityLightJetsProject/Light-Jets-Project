@@ -1,0 +1,151 @@
+fileFormatVersion: 2
+guid: a80fdfa51e5022f419f91fdbb1a4f912
+timeCreated: 1442513173
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Arc001
+    100002: Arc002
+    100004: "Bo\xEEte001"
+    100006: "Bo\xEEte004"
+    100008: //RootNode
+    100010: Rightcurve
+    100012: Rightcurvelight
+    100014: Straight
+    100016: Arc004
+    100018: Arc005
+    100020: "Bo\xEEte005"
+    100022: "Bo\xEEte006"
+    100024: "Bo\xEEte007"
+    100026: "Bo\xEEte008"
+    100028: "Bo\xEEte009"
+    100030: Objet004
+    100032: rightcurve
+    100034: rightcurvelarge
+    100036: rightcurvelight
+    100038: straight
+    400000: Arc001
+    400002: Arc002
+    400004: "Bo\xEEte001"
+    400006: "Bo\xEEte004"
+    400008: //RootNode
+    400010: Rightcurve
+    400012: Rightcurvelight
+    400014: Straight
+    400016: Arc004
+    400018: Arc005
+    400020: "Bo\xEEte005"
+    400022: "Bo\xEEte006"
+    400024: "Bo\xEEte007"
+    400026: "Bo\xEEte008"
+    400028: "Bo\xEEte009"
+    400030: Objet004
+    400032: rightcurve
+    400034: rightcurvelarge
+    400036: rightcurvelight
+    400038: straight
+    2300000: "Bo\xEEte001"
+    2300002: "Bo\xEEte004"
+    2300004: Rightcurve
+    2300006: Rightcurvelight
+    2300008: Straight
+    2300010: "Bo\xEEte005"
+    2300012: "Bo\xEEte006"
+    2300014: "Bo\xEEte007"
+    2300016: "Bo\xEEte008"
+    2300018: "Bo\xEEte009"
+    2300020: Objet004
+    2300022: rightcurve
+    2300024: rightcurvelarge
+    2300026: rightcurvelight
+    2300028: straight
+    3300000: "Bo\xEEte001"
+    3300002: "Bo\xEEte004"
+    3300004: Rightcurve
+    3300006: Rightcurvelight
+    3300008: Straight
+    3300010: "Bo\xEEte005"
+    3300012: "Bo\xEEte006"
+    3300014: "Bo\xEEte007"
+    3300016: "Bo\xEEte008"
+    3300018: "Bo\xEEte009"
+    3300020: Objet004
+    3300022: rightcurve
+    3300024: rightcurvelarge
+    3300026: rightcurvelight
+    3300028: straight
+    4300000: "Bo\xEEte001"
+    4300002: "Bo\xEEte004"
+    4300004: Rightcurvelight
+    4300006: Rightcurve
+    4300008: Straight
+    4300010: straight
+    4300012: rightcurve
+    4300014: "Bo\xEEte005"
+    4300016: "Bo\xEEte006"
+    4300018: "Bo\xEEte007"
+    4300020: "Bo\xEEte008"
+    4300022: "Bo\xEEte009"
+    4300024: rightcurvelight
+    4300026: Objet004
+    4300028: rightcurvelarge
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
