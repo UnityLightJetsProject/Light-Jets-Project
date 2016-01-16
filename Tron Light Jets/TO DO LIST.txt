@@ -1,0 +1,11 @@
+Contrôles à terminer
+Projectiles
+Checkpoint
+
+Tourelles
+Couleurs
+Menus
+
+Personalisation vaisseau
+
+Dégâts des colisions
