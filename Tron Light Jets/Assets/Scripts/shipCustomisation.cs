@@ -59,6 +59,7 @@ public class shipOptimisation : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		/*
 		if (shieldCapacity != getShieldCapacityCursorValue ()) {
 			setShieldCapacity (getShieldCapacityCursorValue ());
 			setShieldPointReserve ();
@@ -67,6 +68,8 @@ public class shipOptimisation : MonoBehaviour {
 			setShieldReloading (getShieldReloadingCursorValue);
 			setShieldPointReserve ();
 		}
+
+
 		if ( =! getValue()) {
 			;
 			setWeapon1PointReserve ();
@@ -99,6 +102,7 @@ public class shipOptimisation : MonoBehaviour {
 			;
 			;
 		}
+		*/
 	}
 
 	void movingCursor() {
