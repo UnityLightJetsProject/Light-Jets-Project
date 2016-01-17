@@ -15,6 +15,7 @@ public class playerControlerV2 : MonoBehaviour {
 	private float thrust; // current thrust power
 	private float selectedThrust; // speedSelector * thrustMax / 100
 	private int energy; // energy left
+    private int health; // health left
 
 	private bool boostActivated;
 
@@ -22,6 +23,7 @@ public class playerControlerV2 : MonoBehaviour {
 	private float mass; // ship mass
 	public float sizeCoeff; // coefficient used to simulate the surface on which air drag applies
 	public int energyMax; // maximum of energy the ship can store
+    public int healthMax;
 	public int energyRefillSpeed; // multiply per 50 to have the amount of energy refilled per second
 	public int boostEnergyConsumption; // multiply per 50 to have the amount of energy used by boost each second
 	public int weaponEnergyConsumption; // energy used for each shot
@@ -59,6 +61,7 @@ public class playerControlerV2 : MonoBehaviour {
 		speedSelector = 0;
 		selectedThrust = 0;
 		energy = energyMax;
+        health = healthMax;
 		mass = GetComponent<Rigidbody> ().mass;
 		if (mass == 0)
 			mass = 1000;
@@ -66,7 +69,12 @@ public class playerControlerV2 : MonoBehaviour {
 
 	void Update() {
 		UIUpdate ();
-	}
+
+        if (health < 1)
+        {
+            Destroy(gameObject);
+        }
+    }
 
 	void FixedUpdate () {
 		speedSelecting ();
@@ -97,27 +105,19 @@ public class playerControlerV2 : MonoBehaviour {
 	}
 
 	void pitch() {
-		if (Input.GetAxis("Pitch") != 0) {
-			transform.Rotate(Vector3.right * pitchSpeed * Input.GetAxis("Pitch"));
-		}
+        GetComponent<Transform>().Rotate(Vector3.right * pitchSpeed * Input.GetAxis("Pitch"));
 	}
 	
 	void yaw() {
-		if (Input.GetAxis("Yaw") != 0) {
-			transform.Rotate(Vector3.up * yawSpeed * Input.GetAxis("Yaw"));
-		}
+        GetComponent<Transform>().Rotate(Vector3.up * yawSpeed * Input.GetAxis("Yaw"));
 	}
 
 	void rollLeft() {
-		if (Input.GetAxis ("RollLeft") != 0) {
-			transform.Rotate (Vector3.forward * rollSpeed * Input.GetAxis ("RollLeft"));
-		}
+        GetComponent<Transform>().Rotate (Vector3.forward * rollSpeed * Input.GetAxis ("RollLeft"));
 	}
 	
 	void rollRight() {
-		if (Input.GetAxis("RollRight") != 0) {
-			transform.Rotate(Vector3.forward * -rollSpeed * Input.GetAxis("RollRight"));
-		}
+        GetComponent<Transform>().Rotate(Vector3.forward * -rollSpeed * Input.GetAxis("RollRight"));
 	}
 
 	// update thrust power, thrust goes up in inferior to selected thrust, else it goes down
@@ -303,8 +303,8 @@ public class playerControlerV2 : MonoBehaviour {
 	float dragFormula(float speed) {
 		return (-(speed * speed * airVisquosity) / 2) * sizeCoeff;
 	}
-	
-	void setSpeedSelector (float newSpeedSelector){
+
+    void setSpeedSelector (float newSpeedSelector){
 		speedSelector = newSpeedSelector;
 	}
 	
@@ -335,4 +335,9 @@ public class playerControlerV2 : MonoBehaviour {
 	void setEnergy(int newEnergy) {
 		energy = newEnergy;
 	}
+
+    void damage(int damages)
+    {
+        health -= damages;
+    }
 }
