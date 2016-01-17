@@ -1,45 +1,44 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Checkpoint : MonoBehaviour {
-	public GameObject[] checkpoints;
-	private GameController gameController;
-	
+public class Checkpoint : MonoBehaviour
+{
+	public int id;
+	private GameObject circuit;
+
+
 	void Start ()
 	{
-		GameObject gameControllerObject = GameObject.FindWithTag ("GameController");
-		if (gameControllerObject != null)
-		{
-			gameController = gameControllerObject.GetComponent <GameController>();
-		}
-		if (gameController == null)
-		{
-			Debug.Log ("Cannot find 'GameController' script");
-		}
+		circuit = GameObject.FindGameObjectWithTag ("Circuit");
 	}
-/*
-	void OnTriggerEnter(Collider other) 
+
+	void OnTriggerEnter (Collider other)
 	{
-		if (other.tag != "Player")
-		{
-			return;
-		}
-		if (other.tag == "Player")
-		{
-			if(verifyCheckpointOrder(other.name, checkpointNumber))
-				gameController.setPlayerCheckpoint (player, checkpointNumber);
-			else
-				wrongCheckpoint();
+		if (other.CompareTag ("Player")) {
+			if (verifyCheckpointOrder ()) {
+				goodCheck ();
+			} else {
+				badCheck ();
+			}
 		}
 	}
 
-	bool verifyCheckpointOrder(){
-		return;
+	bool verifyCheckpointOrder ()
+	{
+		if (circuit.GetComponent<CircuitManager> ().idLastCheckPoint == id - 1)
+			return true;
+		return false;
 	}
-*/
-	// Update is called once per frame
-	void Update () {
 
+	void goodCheck ()
+	{
+		print ("ok");
+		circuit.GetComponent<CircuitManager> ().setLastCheckpoint (id);
+	}
+
+	void badCheck ()
+	{
+		print ("pas le bon");
 	}
 }
 
