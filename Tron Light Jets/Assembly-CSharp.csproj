@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\DestroyByTime.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\GuiTextureTest.cs" />
+     <Compile Include="Assets\Scripts\MenuManager.cs" />
      <Compile Include="Assets\Scripts\Mover.cs" />
      <Compile Include="Assets\Scripts\PlayerControler.cs" />
      <Compile Include="Assets\Scripts\Rotation.cs" />
