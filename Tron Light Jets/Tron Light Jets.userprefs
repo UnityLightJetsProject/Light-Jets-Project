@@ -1,11 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Checkpoint.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MenuManager.cs">
     <Files>
+      <File FileName="Assets\Scripts\MenuManager.cs" Line="32" Column="1" />
       <File FileName="Assets\Scripts\playerControlerV2.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\shipCustomisation.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CircuitManager.cs" Line="25" Column="1" />
-      <File FileName="Assets\Scripts\Checkpoint.cs" Line="17" Column="37" />
+      <File FileName="Assets\Scripts\CircuitManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Checkpoint.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
